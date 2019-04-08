@@ -30,9 +30,9 @@ seed = 5
 numpy.random.seed(seed)
 
 # Read the CSV into a pandas data frame (df)
-dftr = pd.read_csv('/home/teamboehmdsp/test_reza/kch/train.csv', delimiter=',')
+dftr = pd.read_csv('train.csv', delimiter=',')
 train_data = np.array(dftr)
-dfte = pd.read_csv('/home/teamboehmdsp/test_reza/kch/test.csv', delimiter=',')
+dfte = pd.read_csv('test.csv', delimiter=',')
 test_data = np.array(dfte)
 
 #read csv files to arrays and convert types
