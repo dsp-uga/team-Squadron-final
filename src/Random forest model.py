@@ -2,7 +2,7 @@
 This program is a part of data prediction for Kaggle Santander Bank challenge
 
 This code is for random forest model, it gets train on train set and predict on test set and outputs the CSV file for submit to Kaggle.
-This code has the best adjusted parameters through several tuning and submissions.
+This code has the best adjusted parameters through several tuning and submissions. Score = 0.627 with threshold of 0.3.
 
 This code is implemented using many great directions from https://machinelearningmastery.com/feature-selection-machine-learning-python/
 
@@ -11,7 +11,7 @@ This code is implemented using many great directions from https://machinelearnin
 import numpy as np
 import csv
 import numpy
-import numpy as np
+from scipy import stats
 from numpy import loadtxt
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import StratifiedKFold
@@ -35,9 +35,13 @@ train_data = np.array(dftr)
 dfte = pd.read_csv('test.csv', delimiter=',')
 test_data = np.array(dfte)
 
+#Detecting and Removing outliers
+train_data = np.array(train_data[:,1:(len(train_data[0]))], dtype=np.float)
+train_data = train_data[(np.abs(stats.zscore(train_data)) < 3).all(axis=1)]
+
 #read csv files to arrays and convert types
-XX = train_data[:,2:(len(train_data[0]))]
-YY = train_data[:,1]
+XX = train_data[:,1:(len(train_data[0]))]
+YY = train_data[:,0]
 TT = test_data[:,1:(len(test_data[0]))]
 R = test_data[:,[0]]
 
@@ -45,6 +49,7 @@ T = np.array(TT, dtype=np.float)
 X = np.array(XX, dtype=np.float)
 Y = np.array(YY, dtype=np.int)
 
+#Filter selected features
 sel_f= np.array([ True,  True,  True, False, False, False,  True, False, False,True, False, False,  True,  True, False, False, False, False,True, False, False,  True,  True, False, False, False,  True, False, False, False, False, False,  True,  True,  True, False, False, False, False, False,  True, False, False,  True,  True, False, False, False, False, False, False,  True, False,  True, False, False,  True, False, False, False, False, False, False, False, False, False, False, False, False, False, False,  True, False, False, False,  True,  True, False,  True, False,  True, True, False, False, False, False,  True, False, False,  True, False,  True,  True, False,  True,  True, False, False, False, True, False, False, False, False, False, False,  True,  True, True,  True,  True, False, False, False, False,  True, False, False, False,  True, False,  True,  True, False, False, False, False,  True, False, False,  True, False, False,  True, False, False, False, False, False,  True, False,  True, False, False, False,  True,  True,  True,  True, False, False, False, False, False,  True,  True, False,  True, False, False, False, False, True,  True,  True,  True,  True, False, False,  True,  True, False,  True,  True,  True, False, False,  True, False,  True, True, False, False, False,  True, False, False, False,  True, False,  True,  True, False, False, False, False, False,  True, True, False])
 
 T = T[:,sel_f]
@@ -60,7 +65,7 @@ X_test = sc.transform(X_test)
 T = sc.transform(T)
 
 #RandomForest model 
-regressor = RandomForestRegressor(n_estimators = 40, random_state = 42)
+regressor = RandomForestRegressor(n_estimators = 100, random_state = 42)
 # Train the model on training data
 regressor.fit(X_train, y_train)
   
@@ -70,4 +75,5 @@ print('Mean Squared Error:', metrics.mean_squared_error(y_test, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(y_test, y_pred))) 
 
 ynew = regressor.predict(T)
-np.savetxt("submission11.csv", ynew,header="target")
+np.savetxt("submission14.csv", ynew,header="target")
+
