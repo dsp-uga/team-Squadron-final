@@ -43,7 +43,7 @@
 
 ## E. Deployment
  - [x] **E.1 Redress**: Have we discussed with our organization a plan for response if users are harmed by the results (e.g., how does the data science team evaluate these cases and update analysis and models to prevent future harm)?
- The only way users can be harmed by this result is if they have a medical condition that we found and is leaked by us. But since we do not hold data with personal information. Users can not be harmed by results. Moreover, this study only calculate calcium ions based firing of neurons. It can not detect any diseases or ailments with certainity according to current medical knowledge. 
+ There is no way anyone can harm in any way as the data is completely numerical and doesn't have real or meanningful relation with anything. Also, data has been posted by kaggle which takes care of all possible harm that could possibly happpen.
  - [ ] **E.2 Roll back**: Is there a way to turn off or roll back the model in production if necessary?
  - [ ] **E.3 Concept drift**: Do we test and monitor for concept drift to ensure the model remains fair over time?
  - [ ] **E.4 Unintended use**: Have we taken steps to identify and prevent unintended uses and abuse of the model and do we have a plan to monitor these once the model is deployed?
