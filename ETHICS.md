@@ -12,7 +12,7 @@
  Yes, we considered racial and gender bias. And we collected data from diverge backgrounds. 
  
  - [x] **A.3 Limit PII exposure**: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?
- This dataset does not use PII information. We remove subject names and their identity in the dataset collection, just maintaining one or two personal traits which can never be used to identity an individual solely such as ethinicity and gender. 
+ This dataset does not use PII information. We remove subject names and their identity in the dataset collection. Also, considering the nature of data, which is numerical, nobody can actually collect any meaning information in any way. 
 
 ## B. Data Storage
  - [x] **B.1 Data security**: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)? 
@@ -28,14 +28,14 @@
  - [ ] **C.2 Dataset bias**: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?
  - [ ] **C.3 Honest representation**: Are our visualizations, summary statistics, and reports designed to honestly represent the underlying data?
  - [x] **C.4 Privacy in analysis**: Have we ensured that data with PII are not used or displayed unless necessary for the analysis?
- Yes, we have removed all PII. The only information that remains is images of neurons firing across a time scale. 
+ Yes, we have removed all PII.  
  
  - [x] **C.5 Auditability**: Is the process of generating the analysis well documented and reproducible if we discover issues in the future?
  Yes, we have created a thorough documentation to reproduce our results. 
 
 ## D. Modeling
  - [x] **D.1 Proxy discrimination**: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?
-     No variables are discriminatory. The firing of neurons in brain is a general phenomenon among humans.  
+     No variables are discriminatory. Predicting future transactions doesn't depend on any unfair disciminatory information as it has nothing to do with that.
  - [ ] **D.2 Fairness across groups**: Have we tested model results for fairness with respect to different affected groups (e.g., tested for disparate error rates)?
  - [ ] **D.3 Metric selection**: Have we considered the effects of optimizing for our defined metrics and considered additional metrics?
  - [ ] **D.4 Explainability**: Can we explain in understandable terms a decision the model made in cases where a justification is needed?
