@@ -15,9 +15,8 @@
  This dataset does not use PII information. We remove subject names and their identity in the dataset collection, just maintaining one or two personal traits which can never be used to identity an individual solely such as ethinicity and gender. 
 
 ## B. Data Storage
- - [x] **B.1 Data security**: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)?
- 
- We will protect this data against any misuse by giving access to only machine learning researcher of this field. 
+ - [x] **B.1 Data security**: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)? 
+  We will protect this data against any misuse by giving access to only machine learning researcher of this field. 
  
  - [x] **B.2 Right to be forgotten**: Do we have a mechanism through which an individual can request their personal information be removed?
  The data does not contain PII exposure. However, we reserve the right for every individual. They can share their index number with us and we can remove their data from our dataset. 
