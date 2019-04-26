@@ -24,7 +24,7 @@
  The data is provided by Santander bank on Kaggle and they will take care of the data. Hence we do not know what will be done to data. But in general, kaggle keeps data life long to help other people study and come up with better solutions which helps people to learn more too.   
      
 ## C. Analysis
- - [x] **C.1 Missing perspectives**: Have we sought to address blindspots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?\
+ - [x] **C.1 Missing perspectives**: Have we sought to address blind spots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?\
   Releasing the results but not releasing the model and data itself will prevent any outsider using it for any self-gain.
  
  - [x] **C.2 Dataset bias**: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?\
@@ -41,7 +41,7 @@
 
 ## D. Modeling
  - [x] **D.1 Proxy discrimination**: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?\
-     No variables are discriminatory. Predicting future transactions doesn't depend on any unfair disciminatory information as it has nothing to do with that.
+     No variables are discriminatory. Predicting future transactions doesn't depend on any unfair discriminatory information as it has nothing to do with that.
      
  - [x] **D.2 Fairness across groups**: Have we tested model results for fairness with respect to different affected groups (e.g., tested for disparate error rates)?\
  With our data being brain scans of humans, we would be interested if there does exist any unfairness across cultures. This is always one important questions to address before any project release, thus regardless if we as a group believe there is a chance for disparate error rates, it is our duty to check.
@@ -57,10 +57,10 @@
 
 ## E. Deployment
  - [x] **E.1 Redress**: Have we discussed with our organization a plan for response if users are harmed by the results (e.g., how does the data science team evaluate these cases and update analysis and models to prevent future harm)?\
- There is no way anyone can harm in any way as the data is completely numerical and doesn't have real or meanningful relation with anything. Also, data has been posted by kaggle which takes care of all possible harm that could possibly happpen.
+ There is no way anyone can harm in any way as the data is completely numerical and doesn't have real or meaningful relation with anything. Also, data has been posted by kaggle which takes care of all possible harm that could possibly happen.
  
  - [x] **E.2 Roll back**: Is there a way to turn off or roll back the model in production if necessary?\
- Yes, thats the reason for version control. If there becomes some issues with a new release, such as a model that discriminates, then the team will take necessary actions.
+ Yes, that's the reason for version control. If there becomes some issues with a new release, such as a model that discriminates, then the team will take necessary actions.
  
  - [x] **E.3 Concept drift**: Do we test and monitor for concept drift to ensure the model remains fair over time?\
  As a group we did not test for concept drift.
