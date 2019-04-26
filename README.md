@@ -42,6 +42,7 @@ You can install Tensorflow using pip on command line, for CPU ```sudo pip instal
 
 ## Results 
 
-## Data Science Ethics Policy Checklist 
+## Ethical Implications 
+These models should only be used for study purpose, not to harm or take advantage of anything in any manner.
 
 ### References
