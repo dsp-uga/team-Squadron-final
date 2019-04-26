@@ -6,7 +6,7 @@ Mohammadreza Iman
 
 See the [CONTRIBUTORS.md](https://github.com/dsp-uga/team-Squadron-final/blob/master/CONTRIBUTORS.md) file for details.
 
-# Getting Started
+## Getting Started
 
 Follow the below steps for installation and to run the training and testing sets.
 
@@ -42,6 +42,6 @@ You can install Tensorflow using pip on command line, for CPU ```sudo pip instal
 
 ## Results 
 
-# Data Science Ethics Policy Checklist 
+## Data Science Ethics Policy Checklist 
 
 ### References
