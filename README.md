@@ -55,10 +55,14 @@ Anonymized dataset containing numeric feature variables, the binary target colum
 |Sum-Product Network|0.6768|0.6753|
 |Neural Network|0.7224|0.7253|
 
-
-
-
 ## Ethical Implications 
 These models should only be used for study purpose, not to harm or take advantage of anything in any manner.
+
+## License 
+This project is licensed under the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Acknowledgments
+- This project was completed as a part of the Data Science Practicum 2019 course at the University of Georgia. This work would not have been possible without the support of Dr. Shannon Quinn, [Assistant Professor, University of Georgia Departments of Computer Science] who worked actively to provide us with academic time and advice to pursue those goals.
+- Other resources used have been cited in their corresponding wiki page.
 
 ### References
