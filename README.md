@@ -48,7 +48,7 @@ Anonymized dataset containing numeric feature variables, the binary target colum
 |           Model           |Acuracy on Training dataset|Accuracy on Testing dataset|
 |---------------------------|---------------------------|---------------------------|
 |Decision Tree|0.8396|0.5662|
-**|Random Forest|0.7241|0.8050|**
+|**Random Forest**|**0.7241**|**0.8050**|
 |Support Vector Machine (Kernel:Sigmoid)|0.9005|0.5003|
 |Support Vector Machine (Kernel:Poly)|0.9000|0.5000|
 |Support Vector Machine (Kernel:Gaussian)|0.9101|0.5539|
