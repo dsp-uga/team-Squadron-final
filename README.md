@@ -13,6 +13,7 @@ Follow the below steps for installation and to run the training and testing sets
 ## Prerequisites
 
 - [Python 3.6](https://www.python.org/downloads/release/python-360/)
+- [Rstudio](https://www.rstudio.com/)
 - [Anaconda](https://www.anaconda.com/) - Python Environment virtualization.
 - [Keras](https://keras.io/#installation) - Open-source neural network library
 - [Tensorflow](https://www.tensorflow.org/) - API used as Backend for Keras
@@ -47,6 +48,9 @@ Anonymized dataset containing numeric feature variables, the binary target colum
 
 |           Model           |Acuracy on Training dataset|Accuracy on Testing dataset|
 |---------------------------|---------------------------|---------------------------|
+|Regression|0.1799866|NA|
+|Ridge regression|0.1799114|NA|
+|LASSO regression|0.1799598|NA|
 |Decision Tree|0.8396|0.5662|
 |**Random Forest**|**0.7241**|**0.8050**|
 |Support Vector Machine (Kernel:Sigmoid)|0.9005|0.5003|
@@ -63,6 +67,7 @@ These models should only be used for study purpose, not to harm or take advantag
 - Other resources used have been cited in their corresponding wiki page.
 
 ### References
+- https://www.rstudio.com/
 - For wiki page of Decision Tree we used the information provided on page https://www.geeksforgeeks.org/decision-tree/ 
 - For the wiki page of Random Forest Tree we used information provided on page https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd
 - For the Support Vector MAchine page we took infromation from page https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd
