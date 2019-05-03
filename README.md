@@ -46,7 +46,7 @@ Anonymized dataset containing numeric feature variables, the binary target colum
 
 ## Results 
 
-|           Model           |Acuracy on Training dataset|Accuracy on Testing dataset|
+|           Model           |Accuracy on Training dataset|Accuracy on Testing dataset|
 |---------------------------|---------------------------|---------------------------|
 |Regression|0.1799866|NA|
 |Ridge regression|0.1799114|NA|
