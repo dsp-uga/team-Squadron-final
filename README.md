@@ -63,3 +63,8 @@ These models should only be used for study purpose, not to harm or take advantag
 - Other resources used have been cited in their corresponding wiki page.
 
 ### References
+- For wiki page of Decision Tree we used the information provided on page https://www.geeksforgeeks.org/decision-tree/ 
+- For the wiki page of Random Forest Tree we used information provided on page https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd
+- For the Support Vector MAchine page we took infromation from page https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd
+- For sum-product model theory we used page https://spn.cs.washington.edu/
+- For the Neural Network theroy we referred to page https://github.com/dsp-uga/team-Squadron-final/wiki/6.-Neural-Network
