@@ -56,7 +56,7 @@ T = T[:,sel_f]
 X = X[:,sel_f]
 
 #Dividing the train data to train and validation sets for scaled and unscaled data
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.1, random_state=1)
+X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.15, random_state=1)
 
 # Feature Scaling
 sc = StandardScaler()  
@@ -65,7 +65,7 @@ X_test = sc.transform(X_test)
 T = sc.transform(T)
 
 #RandomForest model 
-regressor = RandomForestRegressor(n_estimators = 100, random_state = 42)
+regressor = RandomForestRegressor(n_estimators = 100, random_state = 55)
 # Train the model on training data
 regressor.fit(X_train, y_train)
   
