@@ -2,7 +2,7 @@
 This program is a part of data prediction for Kaggle Santander Bank challenge
 
 This code is for random forest model, it gets train on train set and predict on test set and outputs the CSV file for submit to Kaggle.
-This code has the best adjusted parameters through several tuning and submissions. Score = 0.627 with threshold of 0.3.
+This code has the best adjusted parameters through several tuning and submissions.
 
 This code is implemented using many great directions from https://machinelearningmastery.com/feature-selection-machine-learning-python/
 
@@ -37,7 +37,7 @@ test_data = np.array(dfte)
 
 #Detecting and Removing outliers
 train_data = np.array(train_data[:,1:(len(train_data[0]))], dtype=np.float)
-train_data = train_data[(np.abs(stats.zscore(train_data)) < 3).all(axis=1)]
+train_data = train_data[(np.abs(stats.zscore(train_data)) < 4).all(axis=1)]
 
 #read csv files to arrays and convert types
 XX = train_data[:,1:(len(train_data[0]))]
